@@ -11,7 +11,7 @@ async function getProducts() {
 
 
     data.forEach((item) => {
-    const newElement = createCard(data.image, data.title, data.description);
+    const newElement = createCard(item.image, item.title, item.description);
     cardWrapper.appendChild(newElement);
     });
   } catch (err) {
